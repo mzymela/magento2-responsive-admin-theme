@@ -11,7 +11,7 @@ For now, there are few lines added in less files and some basic javascript to ha
 ### Installation
 The easiest method of installation is by using Composer:
 ```
-composer require flexydev/magento2-responsive-admin-theme
+composer require flexydev/theme-responsive-adminhtml-backend
 ```
 Alternatively, you can download the repository and place it in the `app/design/adminhtml/Flexydev/responsive` directory. To activate the theme, you can either use the provided module, which handles the activation process: [Magento Responsive Admin Module](https://github.com/mzymela/magento2-responsive-admin-module), or manually add the necessary configuration to your existing module.
 
