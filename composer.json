@@ -1,0 +1,21 @@
+{
+    "name": "flexydev/theme-responsive-adminhtml-backend",
+    "description": "N/A",
+    "type": "magento2-theme",
+    "license": [
+        "OSL-3.0"
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": ">=7.0",
+        "magento/framework": ">=100.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}
+
