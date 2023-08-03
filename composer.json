@@ -5,12 +5,19 @@
     "license": [
         "OSL-3.0"
     ],
+    "authors": [
+        {
+            "name": "Michał Zymeła",
+            "email": "contact@michalzymela.com"
+        }
+    ],
     "config": {
         "sort-packages": true
     },
     "require": {
         "php": ">=7.0",
-        "magento/framework": ">=100.0"
+        "magento/framework": ">=100.0",
+        "flexydev/module-responsive-admin": "*"
     },
     "autoload": {
         "files": [
