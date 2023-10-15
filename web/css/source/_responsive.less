@@ -153,6 +153,10 @@
         min-width: initial;
     }
 
+    .admin__fieldset > .admin__field {
+        margin-left: 0;
+    }
+
     .page-wrapper {
         width: 100%;
     }
@@ -177,6 +181,28 @@
     .admin__data-grid-header-row div[class*='col-'] {
         float: none;
         width: 100%;
+        margin-left: 0;
+    }
+
+    [class*='admin__control-grouped'] > .admin__field {
+        display: block;
+    }
+
+    [class*='admin__control-grouped'] > .admin__field.admin__field-default,
+    [class*='admin__control-grouped'] > .admin__field.admin__field-x-small,
+    [class*='admin__control-grouped'] > .admin__field.admin__field-small,
+    [class*='admin__control-grouped'] > .admin__field.admin__field-medium,
+    [class*='admin__control-grouped'] > .admin__field.admin__field-large,
+    .admin__control-grouped-date > .admin__field-date{
+        width: 100%;
+    }
+
+    [class*='admin__control-grouped'] > .admin__field:nth-child(n + 2) {
+        padding-left: 0;
+    }
+
+    legend.admin__field-label {
+        display: none;
     }
 
     [class*='admin__control-grouped'] > .admin__field:first-child > .admin__field-label,
@@ -184,11 +210,23 @@
         width: 100%;
         float: none;
         position: static;
+        margin-left: 0;
     }
+
 
     .admin__field-label {
         text-align: left;
         margin-bottom: @indent__m;
+    }
+
+    .abs-field-no-label,
+    .admin__fieldset > .admin__field.admin__field-no-label > .admin__field-control,
+    .admin__field-no-label, .admin__field-group-additional {
+        margin-left: 0;
+    }
+
+    .admin__fieldset-wrapper-content .admin__fieldset {
+        padding-top: 0;
     }
 
     .sticky-header {
@@ -208,6 +246,19 @@
         }
     }
 
+    .page-main-actions:not(._hidden) {
+        margin-left: -@indent__m;
+        margin-right: -@indent__m;
+    }
+
+    .page-actions .page-actions-buttons > button.back {
+        display: none;
+    }
+
+    .page-actions-buttons {
+        margin-top: @indent__s;
+    }
+
     .page-actions-buttons, .page-actions.floating-header,
     .dashboard-advanced-reports {
         flex-wrap: wrap;
@@ -225,9 +276,27 @@
     }
 
 
-    .admin__field:not(.admin__field-option) > .admin__field-label span[data-config-scope]:before,
-    .accordion .config .label span[data-config-scope]:before {
+    .admin__field:not(.admin__field-option) > .admin__field-label span[data-config-scope]:before{
         right: initial;
+    }
+
+    .accordion .config {
+        .value {
+            width: 70%;
+        }
+
+        td:last-child {
+            padding:0;
+        }
+    }
+
+    .admin__data-grid-actions-wrap{
+        float: none;
+        display: flex;
+    }
+
+    .admin__data-grid-pager-wrap {
+        float: none;
     }
 
     .dashboard-advanced-reports-actions {
